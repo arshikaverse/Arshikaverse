@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Arshikaverse</title>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/favicon.jpg">
+  <style>
+    ::selection {
+      background-color: rgb(255, 0, 51);
+      color: white;
+    }
+    .brand-font, #logo {
+      font-family: 'Pacifico', cursive;
+    }
+
+    body {
+      font-family: 'Arial';
+      text-align: center;
+      background-color: #f8f9fa;
+    }
+
+    #hero {
+      background-image: url("img/hero.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: 40px;
+    }
+
+    nav {
+      text-align: left;
+    }
+
+    .navbar-custom {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .05);
+    }
+
+    .hero-title {
+      color: rgb(255, 0, 51);
+      font-weight: 700;
+    }
+
+    .text-title {
+      color: rgb(255, 0, 51);
+    }
+
+    #about-me-container {
+      background-color: white;
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 800px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+    }
+
+    .book-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid #dee2e6;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .book-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .book-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    footer {
+      background-color: rgba(52, 58, 64, 0.992);
+      color: rgb(248, 249, 250);
+      padding: 30px 0;
+      margin-top: 50px;
+    }
+
+    .footer-link {
+      color: rgb(173, 181, 189);
+      transition: color 0.2s;
+    }
+
+    .footer-link:hover {
+      color: white;
+    }
+
+    .back-to-top {
+      font-size: 30pt;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 9999;
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid px-0 d-none d-lg-block" id="header">
+    <div class="row gx-0 align-items-center">
+      <div class="col-lg-4 py-3">
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <h6 class="fw-bold mb-0">Email Me:</h6>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kitansing@gmail.com" class="text-decoration-none"
+            style="color: blue;">
+            kitansing@gmail.com
+          </a>
+        </div>
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <h6 class="fw-bold mb-0">Email Website Developer:</h6>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atharvsin03@gmail.com" class="text-decoration-none"
+            style="color: blue;">
+            atharvsin03@gmail.com
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4 text-center py-3">
+        <a href="#">
+          <img src="img/header.jpg" class="img-fluid rounded-2" style="height: 70%; width: 70%;" alt="Arshikaverse">
+        </a>
+      </div>
+      <div class="col-lg-4 py-3 text-center">
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <div class="text-start">
+            <h6 class="fw-bold mb-0">Find me online:</h6>
+            <ul>
+              <li><a href="https://www.youtube.com/@arshikaverse" class="text-decoration-none" style="color: blue;">
+                  <i class="fab fa-youtube"></i> Youtube
+                </a>
+              </li>
+              <li>
+                <a href="https://www.goodreads.com/user/show/154143838-arshika" class="text-decoration-none"
+                  style="color: blue;">
+                  <i class="fab fa-goodreads-g"></i> Goodreads
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0 sticky-top">
+    <a href="index.html" class="navbar-brand d-block d-lg-none">
+      <h1 class="m-0 text-white brand-font">Arshikaverse</h1>
+    </a>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto mx-lg-auto py-0 mb-1 mt-1">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="Portfolio.html">Portfolio</a>
+        <a class="nav-link" href="index.html#currently-reading">Currently Reading Books</a>
+        <a class="nav-link" data-bs-toggle="modal"
+          data-bs-target="#bookModal">Products</a>
+        <!-- <a class="nav-link" href="Products.html">Products</a> -->
+        <a class="nav-link" href="Videos.html">Videos</a>
+      </div>
+    </div>
+  </nav>
+  <div class="modal fade" id="bookModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body py-5" id="qrArea">
+          <h2 class="text-center text-title">Sorry!</h4>
+          <h5 class="mt-4">Products is not available right now</h5>
+          <h5 class="mb-4">We regret any inconvenience caused</h5>
+          <button type="button" class="btn btn-light border px-4" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="hero">
+    <div class="container py-5">
+      <h1 class="mt-2 hero-title display-4 brand-font">Welcome to my world!</h1>
+      <h4 class="mt-3" style="color: white;">The best place for book reviews, recommendations, music, travel, & more</h4>
+    </div>
+  </section>
+  <section id="about-me">
+    <div class="container">
+      <h2 class="fw-bold mb-4 text-title">About Me</h2>
+      <div class="p-4 pb-4" id="about-me-container">
+        <p class="text-start">
+          Welcome to ‘Arshikaverse’. My name is Arshika and this is my universe. Hence the name.
+          I am a 13 years old girl whose love for reading knows no bound. I tend to share this love in terms of book reports and recommendations.
+          If I am not reading, I am either painting or singing with my guitar or harmonium.
+        </p>
+        <h6>See more on <a href="Portfolio.html" class="text-decoration-none">portfolio</a></h6>
+      </div>
+    </div>
+  </section>
+  <section id="currently-reading">
+    <div class="container py-4">
+      <h2 class="fw-bold mb-5 text-title">Currently Reading Books</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card book-card h-100">
+            <a href="https://www.amazon.in/dp/0143461168/?bestFormat=true&k=the%20locked%20door&ref_=nb_sb_ss_w_scx-ent-bk-ww_k0_1_10_de&crid=2H2I8SCHIGYTU&sprefix=the%20locked"
+              target="_blank" class="book-link">
+              <img src="https://m.media-amazon.com/images/I/81aqIyn4XrL._SY466_.jpg" class="card-img-top"
+                alt="Not Quite Dead Yet">
+            </a>
+            <div class="card-body p-3 text-start">
+              <h5 class="fw-bold">The Locked Door by Freida McFadden</h5>
+              <h6 class="text-muted mb-1">₹335</h6>
+              <p class="small">Some doors are locked for a reason</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card book-card h-100">
+            <a href="https://www.amazon.in/Inmate-addictive-psychological-thriller-mind-bending/dp/0143461176/ref=sr_1_1_sspa?crid=39SDKXGMO7BJR&dib=eyJ2IjoiMSJ9.9Dx4RfCAO_ttbTRIdZ9F8skIpYcgI8aUPeDHtEnrByp0VWdTh8lUfBIU-V36hjRYInJN7GG6poeRAOhcqfzkEyXrWonIlQKZItyx0BYa8tuE4J0W2ITz1O455xLbQgoFTSSikITBSMSd5yi5CDHSBpS3CcLzGs5ERJTxXPilQ3H2dVdoSRR3APvGDWiQI7_4EOdic45EW64FjAk-yVUHi6WfJ8SgMQdFlcdTpm1fGo0.o4_qJLUP6OmWK39DovuCfV765rkgrfEwopAthkxT3f8&dib_tag=se&keywords=the+inmate&qid=1779512061&s=books&sprefix=the+inmate%2Cstripbooks%2C254&sr=1-1-spons&aref=HQCh8bBPFg&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" class="book-link">
+              <img src="https://m.media-amazon.com/images/I/818cig7-+HL._SL1500_.jpg" class="card-img-top"
+                alt="Five Survive Book Cover">
+            </a>
+            <div class="card-body p-3 text-start">
+              <h5 class="fw-bold">The Inmate by Freida McFadden</h5>
+              <h6 class="text-muted mb-1">₹361</h6>
+              <p class="small">Never ever become too friendly with the inmate
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="favorite-books">
+    <div class="container py-4">
+      <h2 class="fw-bold mb-5 text-title">Favorites Books</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card book-card h-100">
+            <a href="https://www.amazon.in/dp/0349437017/?bestFormat=true&k=fourth%20wing%20book&ref_=nb_sb_ss_w_scx-ent-bk-ww_k1_1_10_de&crid=3GYQYWZ1DHQBA&sprefix=the%20fourth"
+              target="_blank" class="book-link">
+              <img src="https://m.media-amazon.com/images/I/81cquiyLW8L._SY466_.jpg" class="card-img-top"
+                alt="The Naturals">
+            </a>
+            <div class="card-body p-3 text-start">
+              <h5 class="fw-bold">Fourth Wing Book #1 by Rebecca Yarros</h5>
+              <p class="text-muted small mb-1">₹348</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card book-card h-100">
+            <a href="https://www.amazon.in/Cruel-Prince-Folk-Air/dp/1471407276/ref=sr_1_1?adgrpid=58943500495&dib=eyJ2IjoiMSJ9.YwGVXslojwF08mZxFMLDLuW50ZmXCjrVbcwQy8OW3JzX1i0fx4JcCGiXBMX5pFGU_Qjf71UlLFG0MajQiPVOHkmvLSaFFNCxbRbeBFT3CwrfZufz3eUtur2w3ckUqzxGSRyuDJMDlO8Pajb3YXHbj8RMN4wVeszLDdOFb4jUrkdSpQLNeyqzgneIlSvGM__3m3Pmu9uafw2Dx-agpeOmCGqkSNYlPLCQpM7bEuco1b4.GinqRk2q62DUUct3zFuSlCIsI-OjtUJbbTPxr-T10f0&dib_tag=se&ext_vrnc=hi&hvadid=763390605296&hvdev=c&hvlocphy=9050497&hvnetw=g&hvqmt=e&hvrand=11785269064169448660&hvtargid=kwd-305003995341&hydadcr=10777_2260963&keywords=the+cruel+prince&mcid=5e4b0c0345d83c2f9a001a0bb5e8d5a6&qid=1766298030&sr=8-1"
+              target="_blank" class="book-link">
+              <img src="https://m.media-amazon.com/images/I/61mh6nw63+L._SY466_.jpg" class="card-img-top"
+                alt="The Cruel Prince">
+            </a>
+            <div class="card-body p-3 text-start">
+              <h5 class="fw-bold">The Cruel Prince Book #1 by Holly Black </h5>
+              <p class="text-muted small mb-1">₹312</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card book-card h-100">
+            <a href="https://www.amazon.in/FIVE-SURVIVE-Holly-Jackson/dp/0008507236/ref=sr_1_1_sspa?crid=2QNBA6FSEAGG6&dib=eyJ2IjoiMSJ9.uCYcXoLoQl0nxe1qXfrI0DADNgpnm9ulYrMOHgNQk-V_qIV2JyeHpnXdP2jHipxTxxLZfgpTMiFLa2Od0qnVkVMFjIifP6OOk2BeEOC-aUxJXPWIPyZyyXrr5738nVcyDoUWPCH8U7M6-ErrPquRSIyW44fZUxXHTWWfDQb9mgoVWeQbbEIIozorBGffZxt28KkQdGzDw_1dlNYe3JgdpP4b8mpZW_gIobzyacbYMS4.twMSKR_XjxFi2kSY51mhi784V6F0pe4PE5OfXClCu7k&dib_tag=se&keywords=five+survive&qid=1767848002&s=books&sprefix=five%2Cstripbooks%2C472&sr=1-1-spons&aref=BRWnJqvxX5&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+              target="_blank" class="book-link">
+              <img src="https://m.media-amazon.com/images/I/81nfHds5U4L._SY342_.jpg" class="card-img-top"
+                alt="Five Survive Book Cover">
+            </a>
+            <div class="card-body p-3 text-start">
+              <h5 class="fw-bold">Five Survive by Holly Jackson</h5>
+              <p class="text-muted small mb-1">₹305</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container text-center">
+      <p class="mb-2">Find me online and let's talk about books!</p>
+      <div class="d-flex justify-content-center gap-4">
+        <a href="https://www.youtube.com/@arshikaverse" target="_blank" class="footer-link fs-4"><i
+            class="fab fa-youtube"></i></a>
+        <a href="https://www.goodreads.com/user/show/154143838-arshika" target="_blank" class="footer-link fs-4"><i
+            class="fab fa-goodreads-g"></i></a>
+      </div>
+      <p>Developed by <a href="https://atharvsi03.github.io/atharvswebservices/" id="credit-link"
+          class="text-decoration-none text-white">Atharv's Website Services</a></p>
+    </div>
+  </footer>
+  <button class="btn btn-danger back-to-top p-2">&uarr;</button>
+  <script>
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Arshikaverse - Videos</title>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/favicon.jpg">
+  <style>
+    ::selection {
+      background-color: rgb(255, 0, 51);
+      color: white;
+    }
+
+    .brand-font,
+    #logo {
+      font-family: 'Pacifico', cursive;
+    }
+
+    body {
+      font-family: 'Arial';
+      text-align: center;
+      background-color: #f8f9fa;
+    }
+
+    nav {
+      text-align: left;
+    }
+
+    .navbar-custom {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .05);
+    }
+
+    .hero-title {
+      color: rgb(255, 0, 51);
+      font-weight: 700;
+    }
+
+    .text-title {
+      color: rgb(255, 0, 51);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    #videos .row {
+      box-shadow: 0 10px 35px rgba(70, 70, 70, 0.28);
+      margin: 20pt;
+      border-radius: 10px;
+      padding: 10pt;
+    }
+
+    .ratio-9x16 {
+      --bs-aspect-ratio: 177.77777778%;
+    }
+
+    .short-card {
+      max-width: 220px;
+      margin: auto;
+    }
+
+    footer {
+      background-color: rgba(52, 58, 64, 0.992);
+      color: rgb(248, 249, 250);
+      padding: 30px 0;
+      margin-top: 50px;
+    }
+
+    .footer-link {
+      color: rgb(173, 181, 189);
+      transition: color 0.2s;
+    }
+
+    .footer-link:hover {
+      color: white;
+    }
+
+    .back-to-top {
+      font-size: 30pt;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 9999;
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid px-0 d-none d-lg-block" id="header">
+    <div class="row gx-0 align-items-center">
+      <div class="col-lg-4 py-3">
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <h6 class="fw-bold mb-0">Email Me:</h6>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kitansing@gmail.com" class="text-decoration-none"
+            style="color: blue;">
+            kitansing@gmail.com
+          </a>
+        </div>
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <h6 class="fw-bold mb-0">Email Website Developer:</h6>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atharvsin03@gmail.com" class="text-decoration-none"
+            style="color: blue;">
+            atharvsin03@gmail.com
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4 text-center py-3">
+        <a href="#">
+          <img src="img/header.jpg" class="img-fluid rounded-2" style="height: 70%; width: 70%;" alt="Arshikaverse">
+        </a>
+      </div>
+      <div class="col-lg-4 py-3 text-center">
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <div class="text-start">
+            <h6 class="fw-bold mb-0">Find me online:</h6>
+            <ul>
+              <li><a href="https://www.youtube.com/@arshikaverse" class="text-decoration-none" style="color: blue;">
+                  <i class="fab fa-youtube"></i> Youtube
+                </a>
+              </li>
+              <li>
+                <a href="https://www.goodreads.com/user/show/154143838-arshika" class="text-decoration-none"
+                  style="color: blue;">
+                  <i class="fab fa-goodreads-g"></i> Goodreads
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0 sticky-top">
+    <a href="index.html" class="navbar-brand d-block d-lg-none">
+      <h1 class="m-0 text-white brand-font">Arshikaverse</h1>
+    </a>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto mx-lg-auto py-0 mb-1 mt-1">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="Portfolio.html">Portfolio</a>
+        <a class="nav-link" href="index.html#currently-reading">Currently Reading Books</a>
+        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#bookModal">Products</a>
+        <!-- <a class="nav-link" href="Products.html">Products</a> -->
+        <a class="nav-link active" href="Videos.html">Videos</a>
+      </div>
+    </div>
+  </nav>
+  <div class="modal fade" id="bookModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body py-5" id="qrArea">
+          <h2 class="text-center text-title">Sorry!</h4>
+            <h5 class="mt-4">Products is not available right now</h5>
+            <h5 class="mb-4">We regret any inconvenience caused</h5>
+            <button type="button" class="btn btn-light border px-4" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container py-5">
+    <h1 class="mt-2 hero-title display-4 brand-font">Latest Videos</h1>
+    <h4 class="text-secondary mt-3">Come here to see my videos and shorts on my webpage! If you want to see my videos or
+      shorts on YouTube then here is the link to my channel:</h4>
+    <h5><a href="https://www.youtube.com/@arshikaverse">https://www.youtube.com/@arshikaverse</a></h5>
+  </div>
+  <div class="container" id="videos">
+    <div class="row align-items-start">
+      <div class="col-lg-6">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/94wqKIP-huM" title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h1>Five Survive</h1>
+        <p>
+          Six teens. One road trip. Eight hours to survive!
+          In this video, I’m reviewing Five Survive by Holly Jackson—a nonstop thriller that turns a simple road trip
+          into a fight for survival.
+          I talk about the tension, the twists, and my honest thoughts on what made this book hit so hard (no spoilers,
+          don’t worry).
+          If you’re into fast-paced YA thrillers with secrets, pressure, and plot twists that mess with your head, this
+          one’s going straight on your TBR.
+        </p>
+        <h5>Here is the YouTube Link:</h5>
+        <a href="https://www.youtube.com/watch?v=94wqKIP-huM&t=9s">https://www.youtube.com/watch?v=94wqKIP-huM&t=9s</a>
+        <h5 class="mt-2 mb-0">
+          <a href="https://www.amazon.in/FIVE-SURVIVE-Holly-Jackson/dp/0008507236/ref=sr_1_1_in_f3_0o_at?dib=eyJ2IjoiMSJ9.uCYcXoLoQl0nxe1qXfrI0Ge6mYtOags8MdAKEXHgs7w0X0Kwk_Mpv0X7WKpdS7drN-JpWNEThjSFtaTaNUcCFKp6iSIb8fcxZn8fzl31_hUM9Iy5vUjA752NV33F_NjTn1doRO1EXcgOnXYiH280I-1CiQrc1I5FNhFTbadDahr66OtZg0X461KqDf18_h2onQCsFWzbqVyp9M_MSR5MBw_UP4gSJ4OIDoD79AERarY.CFdaNmxVEZpbEuE3gsBpuneTLalPoqVYml5G0m2gxwY&dib_tag=se&keywords=Five+survive&qid=1780240680&sr=8-1"
+            class="mt-0">Click Here</a>
+          to go to Amazon and buy the book
+        </h5>
+      </div>
+    </div>
+    <div class="row align-items-start">
+      <div class="col-lg-6">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/nPQktmO4CY8" title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h1>The Caraval & Once Upon A Broken Heart</h1>
+        <p>
+          Two series, one vibe: magic, chaos, and emotional damage ✨
+          Sharing my honest thoughts on Caraval and Once Upon a Broken Heart—the twists that wrecked me, the characters
+          I loved (and side-eyed),
+          and whether these books are actually worth the hype. No spoilers, just real reader feelings 📚💔
+        </p>
+        <h5>Here is the YouTube Link:</h5>
+        <a href="https://www.youtube.com/watch?v=nPQktmO4CY8">https://www.youtube.com/watch?v=nPQktmO4CY8D</a>
+        <h5 class="mt-2 mb-0">
+          <a href="https://www.amazon.in/Caraval-Trilogy-Stephanie-Fantasy-Collection/dp/B0GCD9PHSQ/ref=sr_1_9?crid=PFBPSUH91ME2&dib=eyJ2IjoiMSJ9.r4bWOH6GOy6SRJE6ozoAjEHIETTIKX6Vym37jRNNSzB7SJWyw3XWwU-0VLSL6e9kKuCNh1UHM3vebSLktDMFZ9x1uJnoQrMCDPkBL0K1Mq0kjsMbuvJF3lwax2Y-s2ygsjIcLvlmPzd95CSYFH447il1-7yWBz3hJ5ffoWOWJVvmG4_rvow-yXf7INvexRwwTEj16wgVHqQ6wtMZkFyV1YncKcjtgCYd0_lnydTJQyY.5cpTkwyCeDmiiWBbyG1xErgJqsXMbkuW7uqZqWrmdBU&dib_tag=se&keywords=caraval&qid=1769953546&s=books&sprefix=the+car%2Cstripbooks%2C686&sr=1-9"
+            class="mt-0">Click here</a>
+          to go to Amazon and buy the Caraval book set<br>
+          <a href="https://www.amazon.in/Broken-Heart-Ballad-Never-After/dp/B0FFZTGXWK/ref=sr_1_1?crid=1N0JBOOL3BIVV&dib=eyJ2IjoiMSJ9.C56gD1yx8w6fP7RpM2fFPjQ_JhBOhD6PE3v-MdHTnRyuqG2fpyEt0o_YXqLbjIHGZEBannWOOkigslaKydE8YZqef2QAbYr90x3rDMiW_iUrwwcE5fniGMj8RHwJf37xAw_i_kY9f9O_rPK_UjXnCvRxlhrM3qjRCEEC2s3-_70xpG6o769KaUIDszGDsjOH7nyK64Zs5RO04AosSfKFmQjXGPwfTy1iwPW7orBBL4s.nunHsj8oKeJ_bM2qu8MG8z8CtVbmYBExzvJJaNcLGZY&dib_tag=se&keywords=once+upon+a+broken+heart+series&qid=1769953707&s=books&sprefix=on%2Cstripbooks%2C353&sr=1-1"
+            class="mt-0">Click here</a>
+          to go to Amazon and buy the Once Upon a Broken Heart book set
+        </h5>
+      </div>
+    </div>
+    <div class="row align-items-start">
+      <div class="col-lg-6">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/8pvpzuax_fU" title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h1>The Cruel Prince</h1>
+        <p>
+          Welcome back to Arshikaverse! Today we’re diving into The Cruel Prince by Holly Black — a book full of
+          betrayal and chaotic fae politics 👀.
+          If you love morally gray characters and dark academia vibes, you’re in for a treat.
+          Let’s talk Jude, Cardan, and all the royal drama that’ll ruin your sleep schedule 👑.
+        </p>
+        <h5>Here is the YouTube Link:</h5>
+        <a href="https://www.youtube.com/watch?v=8pvpzuax_fU">https://www.youtube.com/watch?v=8pvpzuax_fU</a>
+        <h5 class="mt-2 mb-0">
+          <a href="https://www.amazon.in/Boxset-Cruel-Prince-Nothing-Wicked/dp/147141065X/ref=sr_1_2?crid=2G2YR5XASUSXI&dib=eyJ2IjoiMSJ9.9p-ll8ewR10BhJhg0_z9iW-6YsePKtTwW9_KSoKeNgQhsujNU4WnDVALYxgO733-ML0eGaUa090jgkq0yjq_sKexxQK-tirCOh56nsy17itr3nm-X7HPlv7ecr8LjpH3QyzM_oinCLHj_Dv-B1BTL2_JMTRxXdSG77l_QJs8ZAY516UltCS7EeKO6kZ3vnYJeZyqLevIjnvCF76JC3S8ti5NDz2aIfRY4RSGQmHRGOM.nW4LD0OXKLogDvpLwwC6RT-uRC_grnyPAnxXlhJwr5Q&dib_tag=se&keywords=cruel+prince+series&qid=1764997692&s=books&sprefix=Cruel+%2Cstripbooks%2C205&sr=1-2"
+            class="mt-0">Click Here</a>
+          to go to Amazon and buy the book set
+        </h5>
+      </div>
+    </div>
+    <div class="row align-items-start">
+      <div class="col-lg-6">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/rfB97gVtKds" title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h1>Powerless Series</h1>
+        <p>
+          Welcome to a world where powers are rare, trust is illegal, and everyone’s hot 🔥 but emotionally damaged. I
+          read Powerless so you don’t have to — but you probably still will. Let’s talk drama 💀.
+        </p>
+        <h5>Here is the YouTube Link:</h5>
+        <a href="https://www.youtube.com/watch?v=rfB97gVtKds">https://www.youtube.com/watch?v=rfB97gVtKds</a>
+        <h5 class="mt-2 mb-0">
+          <a href="https://www.amazon.in/Reckless-Powerless-Powerful-Fearless-Collection/dp/B0FK2VBKJW/ref=sr_1_3?crid=1LQ2Z5NB312YP&dib=eyJ2IjoiMSJ9.RwwDMQOBKCTVgLDP6Eipk9PLFBeHbJRWMnEtBDKwG56UZq4Ez-xARIG5xd7X58k2TYOm_CLhhsy9RachKcsMPHH_cNcBGnBrDYHWp063sD4gMfpZyhxDKsoB7ULo11cJcsmxyXUwOyIbWlCK10dY9nd8istIT9fNpirDRFb9Dw_FJZaXjE0fDMQKNFK4dKhLg0WNWQ08pzRvAsTD8RSJx9p1kfj9YDSITv3ffPsewyo.hVM2DiIiKNDSSOMZbtVNU3tgjienvWOM4oQFwy757PU&dib_tag=se&keywords=powerless+series&qid=1765013641&s=books&sprefix=pow%2Cstripbooks%2C265&sr=1-3"
+            class="mt-0">Click here</a>
+          to go to Amazon and buy the book set
+        </h5>
+      </div>
+    </div>
+    <div class="row align-items-start">
+      <div class="col-lg-6">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/wuCk36fGjjI" title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h1>King Of Scars Duology</h1>
+        <p>
+          The end of the Grishaverse is here... but did it deliver? We’re diving into the highs and the lows (yep, that
+          ending). Full review with no spoilers ❌, just vibes, heartbreak, and some ranting.
+        </p>
+        <h5>Here is the YouTube Link:</h5>
+        <a
+          href="https://www.youtube.com/watch?v=wuCk36fGjjI&t=35s">https://www.youtube.com/watch?v=wuCk36fGjjI&t=35s</a>
+        <h5 class="mt-2 mb-0">
+          <a href="https://www.amazon.in/Wolves-Scars-Leigh-Bardugo-Collection/dp/9124112127/ref=sr_1_2?crid=VJ54V90XJ07B&dib=eyJ2IjoiMSJ9.kdgeTQ88w39Hekr_ZX39Q1NTPk8waOwaCW0mpdeBhonZ9lTJjRyulYBnmXL1m_bHcHZd0nbgw2hBxQVFLXCdwr3xKmG8soWQgtrh68xNNSM0SxCaRvSToN8NKS5Wns0xOhi9lYpAa8HHgsvQg0xwjTLnxynBHaMKRUL4O3jmtoIqyaUdSTupFM9Z_OHIcY4I87CO_LYkOKMzyoFpMuanZ5TsdDLN-QNlGGa6ZWeVgsw.mBFPWMnoSVGeibBZelY-2u5yfeQcmYuIw0vrZQGVWJk&dib_tag=se&keywords=rule+of+wolves+book&qid=1765014033&s=books&sprefix=rule+of+wolves+book%2Cstripbooks%2C225&sr=1-2"
+            class="mt-0">Click here</a>
+          to go to Amazon and buy the book set
+        </h5>
+      </div>
+    </div>
+    <div class="row align-items-start">
+      <div class="col-lg-6">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/FbV9UY6Tn6U?t=12s" title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h1>Six of Crows Duology</h1>
+        <p>
+          In today’s video, we dive into Six of Crows by Leigh Bardugo — a gripping fantasy about six outcasts, one
+          impossible heist, and a world full of magic and danger. Get ready for twists, secrets, and
+          unforgettable characters!
+        </p>
+        <h5>Here is the YouTube Link:</h5>
+        <a href="https://www.youtube.com/watch?v=FbV9UY6Tn6U">https://www.youtube.com/watch?v=FbV9UY6Tn6U</a>
+        <h5 class="mt-2 mb-0">
+          <a href="https://www.amazon.in/Six-Crows-Crooked-Kingdom-books/dp/B09YPR9SP2/ref=sr_1_4?crid=2Q04EPP38SQS5&dib=eyJ2IjoiMSJ9.ycLb-lu9WhY3i7W5ipq8ndDtuwbAQXSKMF94AKs5Z4hcrcC1TiLT7nCoYdw6T49jOgLwXJ8CScZKT4ukNSNuq4lCwDO2F7VFXbNNiZZ0AeVAF8uUx6vLeYZHpHXyekN4SCqO8Hn-dX4-TCX8yjlpuXiPrM1y7vs9xmF3EZHIAjMGqM-EM6vWt4eHpMzdOIqWFKT-u5W65M7IJkvz8HqU2U7WNYIMaZBNAHZPGT9DLLI.VtWx6yxIRe2FF1WX8UTB2V68QchEnIvyHRnz16dPyGA&dib_tag=se&keywords=six+of+crows&qid=1765014705&s=books&sprefix=siz+of%2Cstripbooks%2C226&sr=1-4"
+            class="mt-0">Click here</a>
+          to go to Amazon and buy the book set
+        </h5>
+      </div>
+    </div>
+    <div class="row align-items-start">
+      <div class="col-lg-6">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/1QKpMRAmdZ4" title="YouTube video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h1>Shadow and Bone Triology</h1>
+        <p>
+          Join me as I dive into the Shadow and Bone trilogy by Leigh Bardugo! This YA fantasy series is packed with
+          magic, adventure, and unforgettable characters. In this review, I explore Alina’s journey,
+          the mysterious Grisha world, and why this trilogy is a must-read for young readers and fantasy fans. Perfect
+          for kids and teens who love epic stories!
+        </p>
+        <h5>Here is the YouTube Link:</h5>
+        <a
+          href="https://www.youtube.com/watch?v=1QKpMRAmdZ4&t=47s">https://www.youtube.com/watch?v=1QKpMRAmdZ4&t=47s</a>
+        <h5 class="mt-2 mb-0">
+          <a href="https://www.amazon.in/SHADOW-AND-BONE-TRILOGY-BOXSET/dp/1510106456/ref=sr_1_3?crid=1P00CAUF5G80L&dib=eyJ2IjoiMSJ9.bZ-mMI4k_87YxP70vY2g83JUKFnbTtY-pU2jXyRPNQqmMmoKlaghX3Qlg0emROqEPAVAziraTkn6jVf5Ea6ffZgTq_i6RtoDEGtp03ZRNVmihG_tsc78FEmAGdJCClWhOo6oHBnFfNa1pWtG44Ed5wldVH_aCIPdjZHZpg1RRlysG8sR1AQRECtRY-Ncb4CHEJtGrpsAotI2Y1UoaIamS4A8KyRyhRyGeV4Iz-CHLNM.GwluEp_9jmTh8-FzObsnltHm3v_9imnz6ZdEHRSitik&dib_tag=se&keywords=shadow+and+bone&qid=1765014625&s=books&sprefix=shadow+and+bone%2Cstripbooks%2C206&sr=1-3"
+            class="mt-0">Click here</a>
+          to go to Amazon and buy the book set
+        </h5>
+      </div>
+    </div>
+  </div>
+  <h1 class="mt-2 hero-title display-4 brand-font">Latest Shorts</h1>
+
+  <div class="container-fluid" id="videos">
+    <div class="row g-4 justify-content-center">
+
+      <!-- Short 1 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card h-100">
+          <div class="ratio ratio-9x16">
+            <iframe src="https://www.youtube.com/embed/T3JzB0QK5_g"
+              title="Short 1"
+              allowFullScreen>
+            </iframe>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">
+              Universal Studios | Singapore #rides #ytshorts #travel
+            </h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Short 2 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card h-100">
+          <div class="ratio ratio-9x16">
+            <iframe src="https://www.youtube.com/embed/_KmsdS2w9Eg" title="Short 2" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Short Title 2</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Short 3 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card h-100">
+          <div class="ratio ratio-9x16">
+            <iframe src="https://www.youtube.com/embed/lKv0UvhFTj8" title="Short 3" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Short Title 3</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- Short 4 -->
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card h-100">
+          <div class="ratio ratio-9x16">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" title="Short 4" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">Short Title 4</h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <h2 class="text-secondary">Only latest videos & shortsare shown here.</h2>
+  </div>
+  <footer>
+    <div class="container text-center">
+      <p class="mb-2">Find me online and let's talk about books!</p>
+      <div class="d-flex justify-content-center gap-4">
+        <a href="https://www.youtube.com/@arshikaverse" target="_blank" class="footer-link fs-4"><i
+            class="fab fa-youtube"></i></a>
+        <a href="https://www.goodreads.com/user/show/154143838-arshika" target="_blank" class="footer-link fs-4"><i
+            class="fab fa-goodreads-g"></i></a>
+      </div>
+      <p>Developed by <a href="https://atharvsi03.github.io/atharvswebservices/" id="credit-link"
+          class="text-decoration-none text-white">Atharv's Website Services</a></p>
+    </div>
+  </footer>
+  <button class="btn btn-danger back-to-top p-2">&uarr;</button>
+  <script>
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+
+</html>

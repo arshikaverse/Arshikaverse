@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Arshikaverse - Portfolio</title>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="img/favicon.jpg">
+  <style>
+    ::selection {
+      background-color: rgb(255, 0, 51);
+      color: white;
+    }
+
+    .brand-font,
+    #logo {
+      font-family: 'Pacifico', cursive;
+    }
+
+    body {
+      font-family: 'Arial';
+      text-align: center;
+      background-color: #f8f9fa;
+    }
+
+    nav {
+      text-align: left;
+    }
+
+    .navbar-custom {
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .05);
+    }
+
+    .hero-title {
+      color: rgb(255, 0, 51);
+      font-weight: 700;
+    }
+
+    .text-title {
+      color: rgb(255, 0, 51);
+    }
+
+    footer {
+      background-color: rgba(52, 58, 64, 0.992);
+      color: rgb(248, 249, 250);
+      padding: 30px 0;
+      margin-top: 50px;
+    }
+
+    .footer-link {
+      color: rgb(173, 181, 189);
+      transition: color 0.2s;
+    }
+
+    .footer-link:hover {
+      color: white;
+    }
+
+    .back-to-top {
+      font-size: 30pt;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      z-index: 9999;
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid px-0 d-none d-lg-block" id="header">
+    <div class="row gx-0 align-items-center">
+      <div class="col-lg-4 py-3">
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <h6 class="fw-bold mb-0">Email Me:</h6>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kitansing@gmail.com" class="text-decoration-none"
+            style="color: blue;">
+            kitansing@gmail.com
+          </a>
+        </div>
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <h6 class="fw-bold mb-0">Email Website Developer:</h6>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=atharvsin03@gmail.com" class="text-decoration-none"
+            style="color: blue;">
+            atharvsin03@gmail.com
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-4 text-center py-3">
+        <a href="#">
+          <img src="img/header.jpg" class="img-fluid rounded-2" style="height: 70%; width: 70%;" alt="Arshikaverse">
+        </a>
+      </div>
+      <div class="col-lg-4 py-3 text-center">
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <div class="text-start">
+            <h6 class="fw-bold mb-0">Find me online:</h6>
+            <ul>
+              <li><a href="https://www.youtube.com/@arshikaverse" class="text-decoration-none" style="color: blue;">
+                  <i class="fab fa-youtube"></i> Youtube
+                </a>
+              </li>
+              <li>
+                <a href="https://www.goodreads.com/user/show/154143838-arshika" class="text-decoration-none"
+                  style="color: blue;">
+                  <i class="fab fa-goodreads-g"></i> Goodreads
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0 sticky-top">
+    <a href="index.html" class="navbar-brand d-block d-lg-none">
+      <h1 class="m-0 text-white brand-font">Arshikaverse</h1>
+    </a>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="navbar-nav ms-auto mx-lg-auto py-0 mb-1 mt-1">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="Portfolio.html">Portfolio</a>
+        <a class="nav-link" href="index.html#currently-reading">Currently Reading Books</a>
+        <a class="nav-link" data-bs-toggle="modal"
+          data-bs-target="#bookModal">Products</a>
+        <!-- <a class="nav-link" href="Products.html">Products</a> -->
+        <a class="nav-link" href="Videos.html">Videos</a>
+      </div>
+    </div>
+  </nav>
+  <div class="modal fade" id="bookModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body py-5" id="qrArea">
+          <h2 class="text-center text-title">Sorry!</h4>
+          <h5 class="mt-4">Products is not available right now</h5>
+          <h5 class="mb-4">We regret any inconvenience caused</h5>
+          <button type="button" class="btn btn-light border px-4" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid pt-5">
+    <div class="container">
+      <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+        <h1 class="hero-title brand-font">Welcome To Arshikaverse</h1>
+      </div>
+      <div class="row gx-5 align-items-center" style="margin-top: 30px;">
+        <div class="col-lg-5 mb-5 mb-lg-0">
+          <img src="img/portfolio_arshika.jpg" alt="About us" class="img-fluid rounded w-100"
+            style="height:500px; object-fit:cover;">
+        </div>
+        <div class="col-lg-6 pb-3 pt-5 rounded-2" style="text-align: left; border: 2px solid black;">
+          <h1 class="text-title brand-font mb-4">Arshika Singh</h1>
+          <p class="mb-2">I'm Arshika, and I am a young girl whose love for reading truly knows no bounds, so I started
+            this channel to share that passion with all of you!
+            You'll find me diving deep into book reviews, sharing recommendations for my favorite reads—from compelling
+            fantasy to heartwarming contemporary
+            fiction—and chatting about what makes a story unforgettable. While books are my main focus, I also enjoy
+            giving you a sneak peek into my life with
+            fun vlogs and occasionally sharing a music keyboard cover. If you also love getting lost in a good book and
+            want to find your next favorite story,
+            then I hope you'll subscribe and join me on this amazing literary journey!
+          </p>
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <h6 class="fw-bold mb-0">Email Me:</h6>
+            <a id="emailBtn" class="text-decoration-none" style="color: blue;">
+              kitansing@gmail.com
+            </a>
+          </div>
+          <script>
+            const btn = document.getElementById("emailBtn");
+
+            btn.addEventListener("click", function () {
+              if (/Mobi|Android|iPhone|iPad|Nokia/i.test(navigator.userAgent)) {
+                // Phone → open mail app
+                window.location.href = "mailto:kitansing@gmail.com";
+              }
+              else {
+                // PC → open Gmail in browser
+                window.open("https://mail.google.com/mail/?view=cm&fs=1&to=kitansing@gmail.com", "_blank");
+              }
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container text-center">
+      <p class="mb-2">Find me online and let's talk about books!</p>
+      <div class="d-flex justify-content-center gap-4">
+        <a href="https://www.youtube.com/@arshikaverse" target="_blank" class="footer-link fs-4"><i
+            class="fab fa-youtube"></i></a>
+        <a href="https://www.goodreads.com/user/show/154143838-arshika" target="_blank" class="footer-link fs-4"><i
+            class="fab fa-goodreads-g"></i></a>
+      </div>
+      <p>Developed by <a href="https://atharvsi03.github.io/atharvswebservices/" id="credit-link"
+          class="text-decoration-none text-white">Atharv's Website Services</a></p>
+    </div>
+  </footer>
+  <button class="btn btn-danger back-to-top p-2">&uarr;</button>
+  <script>
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+</body>
+
+</html>
