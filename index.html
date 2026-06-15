@@ -21,7 +21,9 @@
       background-color: rgb(255, 0, 51);
       color: white;
     }
-    .brand-font, #logo {
+
+    .brand-font,
+    #logo {
       font-family: 'Pacifico', cursive;
     }
 
@@ -29,6 +31,28 @@
       font-family: 'Arial';
       text-align: center;
       background-color: #f8f9fa;
+    }
+
+    #vid {
+      position: relative;
+      margin-bottom: 40px;
+      overflow: hidden;
+      min-height: 75vh;
+    }
+
+    #vid-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    #vid>.container {
+      position: relative;
+      z-index: 1;
     }
 
     #hero {
@@ -171,8 +195,7 @@
         <a class="nav-link active" href="index.html">Home</a>
         <a class="nav-link" href="Portfolio.html">Portfolio</a>
         <a class="nav-link" href="index.html#currently-reading">Currently Reading Books</a>
-        <a class="nav-link" data-bs-toggle="modal"
-          data-bs-target="#bookModal">Products</a>
+        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#bookModal">Products</a>
         <!-- <a class="nav-link" href="Products.html">Products</a> -->
         <a class="nav-link" href="Videos.html">Videos</a>
       </div>
@@ -183,17 +206,25 @@
       <div class="modal-content">
         <div class="modal-body py-5" id="qrArea">
           <h2 class="text-center text-title" style="color: rgb(255, 0, 51);">Sorry!</h4>
-          <h5 class="mt-4">Products is not available right now</h5>
-          <h5 class="mb-4">We regret any inconvenience caused</h5>
-          <button type="button" class="btn btn-light border px-4" data-bs-dismiss="modal">Close</button>
+            <h5 class="mt-4">Products is not available right now</h5>
+            <h5 class="mb-4">We regret any inconvenience caused</h5>
+            <button type="button" class="btn btn-light border px-4" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
   </div>
+  <!-- 
+  Coming Soon!
+  <section id="vid">
+    <video id="vid-video" autoplay playsinline nofullscreen controls controlsList="nofullscreen">
+      <source src="hero.mp4" type="video/mp4">
+    </video>
+  </section>
+  -->
   <section id="hero">
     <div class="container py-5">
       <h1 class="mt-2 hero-title display-4 brand-font">Welcome to my world!</h1>
-      <h4 class="mt-3"><span style="color: white; background-color: rgb(255, 0, 51);">The best place for book reviews, recommendations, music, travel, & more</span></h4>
+      <h4 class="mt-3"><span style="color: white; background-color: rgb(255, 0, 51);">The best place for book reviews, recommendations, music, travel, &amp; more</span></h4>
     </div>
   </section>
   <section id="about-me">
@@ -202,7 +233,8 @@
       <div class="p-4 pb-4" id="about-me-container">
         <p class="text-start">
           Welcome to ‘Arshikaverse’. My name is Arshika and this is my universe. Hence the name.
-          I am a 13 years old girl whose love for reading knows no bound. I tend to share this love in terms of book reports and recommendations.
+          I am a 13 years old girl whose love for reading knows no bound. I tend to share this love in terms of book
+          reports and recommendations.
           If I am not reading, I am either painting or singing with my guitar or harmonium.
         </p>
         <h6>See more on <a href="Portfolio.html" class="text-decoration-none">portfolio</a></h6>
@@ -229,7 +261,8 @@
         </div>
         <div class="col-md-4">
           <div class="card book-card h-100">
-            <a href="https://www.amazon.in/Inmate-addictive-psychological-thriller-mind-bending/dp/0143461176/ref=sr_1_1_sspa?crid=39SDKXGMO7BJR&dib=eyJ2IjoiMSJ9.9Dx4RfCAO_ttbTRIdZ9F8skIpYcgI8aUPeDHtEnrByp0VWdTh8lUfBIU-V36hjRYInJN7GG6poeRAOhcqfzkEyXrWonIlQKZItyx0BYa8tuE4J0W2ITz1O455xLbQgoFTSSikITBSMSd5yi5CDHSBpS3CcLzGs5ERJTxXPilQ3H2dVdoSRR3APvGDWiQI7_4EOdic45EW64FjAk-yVUHi6WfJ8SgMQdFlcdTpm1fGo0.o4_qJLUP6OmWK39DovuCfV765rkgrfEwopAthkxT3f8&dib_tag=se&keywords=the+inmate&qid=1779512061&s=books&sprefix=the+inmate%2Cstripbooks%2C254&sr=1-1-spons&aref=HQCh8bBPFg&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" target="_blank" class="book-link">
+            <a href="https://www.amazon.in/Inmate-addictive-psychological-thriller-mind-bending/dp/0143461176/ref=sr_1_1_sspa?crid=39SDKXGMO7BJR&dib=eyJ2IjoiMSJ9.9Dx4RfCAO_ttbTRIdZ9F8skIpYcgI8aUPeDHtEnrByp0VWdTh8lUfBIU-V36hjRYInJN7GG6poeRAOhcqfzkEyXrWonIlQKZItyx0BYa8tuE4J0W2ITz1O455xLbQgoFTSSikITBSMSd5yi5CDHSBpS3CcLzGs5ERJTxXPilQ3H2dVdoSRR3APvGDWiQI7_4EOdic45EW64FjAk-yVUHi6WfJ8SgMQdFlcdTpm1fGo0.o4_qJLUP6OmWK39DovuCfV765rkgrfEwopAthkxT3f8&dib_tag=se&keywords=the+inmate&qid=1779512061&s=books&sprefix=the+inmate%2Cstripbooks%2C254&sr=1-1-spons&aref=HQCh8bBPFg&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+              target="_blank" class="book-link">
               <img src="https://m.media-amazon.com/images/I/818cig7-+HL._SL1500_.jpg" class="card-img-top"
                 alt="Five Survive Book Cover">
             </a>
@@ -286,6 +319,74 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+  <section id="favorite-authors">
+    <div class="container py-4">
+      <h2 class="fw-bold mb-5 text-title">Favourite Authors</h2>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Holly Jackson -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-lg text-center p-3 h-100">
+            <img
+              src="https://m.media-amazon.com/images/S/amzn-author-media-prod/8v9hqj728ab17p79t0i6l54prh._SY600_._SL200_._PQ50_._FMwebp_.jpg"
+              class="rounded-circle mx-auto" width="110" height="110" alt="Holly Jackson">
+            <div class="my-2">
+              <span class="fw-bold d-inline-block px-4 py-2" style="
+                font-size: 26px;
+                border-radius: 999px;
+              ">
+                #2
+              </span>
+            </div>
+            <h5 class="fw-bold mb-0">
+              Holly Jackson
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card author-card border-0 shadow-lg text-center p-3 h-100" style="transform: translateY(-20px);">
+            <img
+              src="https://m.media-amazon.com/images/S/amzn-author-media-prod/5ttbrvdsk9p66u9sote44l8mj0._SY600_._SL200_._PQ50_._FMwebp_.jpg"
+              class="rounded-circle mx-auto" width="110" height="110" alt="Freida McFadden">
+            <div class="my-2">
+              <span class="fw-bold d-inline-block px-4 py-2" style="
+                font-size: 26px;
+                color: rgb(255, 136, 0);
+                border-radius: 999px;
+              ">
+                #1
+              </span>
+            </div>
+            <h5 class="fw-bold mb-0">
+              Freida McFadden
+            </h5>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card border-0 shadow-lg text-center p-3 h-100">
+            <img
+              src="https://m.media-amazon.com/images/S/amzn-author-media-prod/dsbr0jfdbbm10svbc1ribilmrp._SY600_._SL200_._PQ50_._FMwebp_.jpg"
+              class="rounded-circle mx-auto" width="110" height="110" alt="Holly Black">
+            <div class="my-2">
+              <span class="fw-bold d-inline-block px-4 py-2" style="
+                font-size: 26px;
+                border-radius: 999px;
+              ">
+                #3
+              </span>
+            </div>
+            <h5 class="fw-bold mb-0">
+              Holly Black
+            </h5>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
