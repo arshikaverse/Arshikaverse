@@ -194,7 +194,15 @@
       <div class="navbar-nav ms-auto mx-lg-auto py-0 mb-1 mt-1">
         <a class="nav-link active" href="index.html">Home</a>
         <a class="nav-link" href="Portfolio.html">Portfolio</a>
-        <a class="nav-link" href="index.html#currently-reading">Currently Reading Books</a>
+        <div class="dropdown">
+          <button type="button" class="btn nav-link dropdown-toggle" data-bs-toggle="dropdown">
+            Currently Reading Books
+          </button>
+          <ul class="dropdown-menu bg-dark">
+            <li><a class="nav-link" href="index.html#currently-reading">Arshika's Currently Reading Books</a></li>
+            <li><a class="nav-link" href="index.html#athcurrently-reading">Atharv's Currently Reading Books</a></li>
+          </ul>
+        </div>
         <a class="nav-link" data-bs-toggle="modal" data-bs-target="#bookModal">Products</a>
         <!-- <a class="nav-link" href="Products.html">Products</a> -->
         <a class="nav-link" href="Videos.html">Videos</a>
@@ -244,7 +252,7 @@
   <section id="currently-reading">
     <div class="container py-4">
       <h2 class="fw-bold mb-5 text-title">Currently Reading Books</h2>
-      <div class="row g-4 justify-content-center">
+      <!-- <div class="row g-4 justify-content-center">
         <div class="col-md-4">
           <div class="card book-card h-100">
             <a href="https://www.amazon.in/dp/0143461168/?bestFormat=true&k=the%20locked%20door&ref_=nb_sb_ss_w_scx-ent-bk-ww_k0_1_10_de&crid=2H2I8SCHIGYTU&sprefix=the%20locked"
@@ -269,11 +277,12 @@
             <div class="card-body p-3 text-start">
               <h5 class="fw-bold">The Inmate by Freida McFadden</h5>
               <h6 class="text-muted mb-1">₹361</h6>
-              <p class="small">Never ever become too friendly with the inmate
+              <p class="small">Never ever become too friendly with the inmate</p>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+      <h5>Sorry, Arshika is not reading any books right now :(</h5>
     </div>
   </section>
   <section id="favorite-books">
@@ -349,10 +358,10 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card author-card border-0 shadow-lg text-center p-3 h-100" style="transform: translateY(-20px);">
+          <div class="card border-0 shadow-lg text-center p-3 h-100">
             <img
               src="https://m.media-amazon.com/images/S/amzn-author-media-prod/5ttbrvdsk9p66u9sote44l8mj0._SY600_._SL200_._PQ50_._FMwebp_.jpg"
-              class="rounded-circle mx-auto" width="110" height="110" alt="Freida McFadden">
+              class="rounded-circle mx-auto" width="110" height="110" alt="Holly Black">
             <div class="my-2">
               <span class="fw-bold d-inline-block px-4 py-2" style="
                 font-size: 26px;
@@ -387,6 +396,41 @@
           </div>
         </div>
 
+      </div>
+    </div>
+  </section>
+  <section id="athcurrently-reading">
+    <div class="container py-4">
+      <h2 class="fw-bold mb-5 text-title">Join in the Atharv Fun!</h2>
+      <h4 class="fw-bold mb-5 text-title">Join Atharv, Arshika's brother as he explores the fantastic world of books!</h4>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card book-card h-100">
+            <a href="https://www.amazon.in/Six-Crows-Book-Leigh-Bardugo-ebook/dp/B01175KE0M"
+              target="_blank" class="book-link">
+              <img src="https://m.media-amazon.com/images/I/91HeZEyjBML._SY466_.jpg" class="card-img-top"
+                alt="The Naturals">
+            </a>
+            <div class="card-body p-3 text-start">
+              <h5 class="fw-bold">Six Of Crows Book #1 by Leigh Bardugo</h5>
+              <p class="text-muted small mb-1">₹440</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card book-card h-100">
+            <a href="https://www.amazon.in/Crooked-Kingdom-Novel-Leigh-Bardugo/dp/B0DDYCYR2C/ref=tmm_pap_swatch_0"
+              target="_blank" class="book-link">
+              <img src="https://m.media-amazon.com/images/I/81mLuxMaI6L._SY425_.jpg" class="card-img-top"
+                alt="The Cruel Prince">
+            </a>
+            <div class="card-body p-3 text-start">
+              <h5 class="fw-bold">Crooked Kingdom Book #1 by Leigh Bardugo </h5>
+              <p class="text-muted small mb-1">₹441</p>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div>
   </section>
