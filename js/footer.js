@@ -1,6 +1,7 @@
 document.write(`
   <footer>
     <div class="container text-center">
+      <p class="mb2">&copy; 2026 Arshikaverse. All rights reserved.</p>
       <p class="mb-2">Find me online and let's talk about books!</p>
       <div class="d-flex justify-content-center gap-4">
         <a href="https://www.youtube.com/@arshikaverse" target="_blank" class="footer-link fs-4"><i
