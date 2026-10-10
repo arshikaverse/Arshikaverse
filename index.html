@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <title>Arshikaverse</title>
   <!-- Meta -->
@@ -135,9 +134,37 @@
       opacity: 1;
       pointer-events: auto;
     }
+    .reveal {
+      opacity: 0;
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal-left {
+      transform: translateX(-55px);
+    }
+
+    .reveal-right {
+      transform: translateX(55px);
+    }
+
+    .reveal-up {
+      transform: translateY(45px);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+    }
   </style>
 </head>
-
 <body>
   <div class="container-fluid px-0 d-none d-lg-block" id="header">
     <div class="row gx-0 align-items-center">
@@ -254,7 +281,7 @@
       <h2 class="fw-bold mb-5 text-title">Currently Reading Books</h2>
       <!-- <div class="row g-4 justify-content-center">
         <div class="col-md-4">
-          <div class="card book-card h-100">
+          <div class="card book-card h-100 reveal reveal-right">
             <a href="https://www.amazon.in/dp/0143461168/?bestFormat=true&k=the%20locked%20door&ref_=nb_sb_ss_w_scx-ent-bk-ww_k0_1_10_de&crid=2H2I8SCHIGYTU&sprefix=the%20locked"
               target="_blank" class="book-link">
               <img src="https://m.media-amazon.com/images/I/81aqIyn4XrL._SY466_.jpg" class="card-img-top"
@@ -268,7 +295,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card book-card h-100">
+          <div class="card book-card h-100 reveal reveal-right">
             <a href="https://www.amazon.in/Inmate-addictive-psychological-thriller-mind-bending/dp/0143461176/ref=sr_1_1_sspa?crid=39SDKXGMO7BJR&dib=eyJ2IjoiMSJ9.9Dx4RfCAO_ttbTRIdZ9F8skIpYcgI8aUPeDHtEnrByp0VWdTh8lUfBIU-V36hjRYInJN7GG6poeRAOhcqfzkEyXrWonIlQKZItyx0BYa8tuE4J0W2ITz1O455xLbQgoFTSSikITBSMSd5yi5CDHSBpS3CcLzGs5ERJTxXPilQ3H2dVdoSRR3APvGDWiQI7_4EOdic45EW64FjAk-yVUHi6WfJ8SgMQdFlcdTpm1fGo0.o4_qJLUP6OmWK39DovuCfV765rkgrfEwopAthkxT3f8&dib_tag=se&keywords=the+inmate&qid=1779512061&s=books&sprefix=the+inmate%2Cstripbooks%2C254&sr=1-1-spons&aref=HQCh8bBPFg&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
               target="_blank" class="book-link">
               <img src="https://m.media-amazon.com/images/I/818cig7-+HL._SL1500_.jpg" class="card-img-top"
@@ -290,7 +317,7 @@
       <h2 class="fw-bold mb-5 text-title">Favorites Books</h2>
       <div class="row g-4 justify-content-center">
         <div class="col-md-4">
-          <div class="card book-card h-100">
+          <div class="card book-card h-100 reveal reveal-left">
             <a href="https://www.amazon.in/dp/0349437017/?bestFormat=true&k=fourth%20wing%20book&ref_=nb_sb_ss_w_scx-ent-bk-ww_k1_1_10_de&crid=3GYQYWZ1DHQBA&sprefix=the%20fourth"
               target="_blank" class="book-link">
               <img src="https://m.media-amazon.com/images/I/81cquiyLW8L._SY466_.jpg" class="card-img-top"
@@ -303,7 +330,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card book-card h-100">
+          <div class="card book-card h-100 reveal reveal-left">
             <a href="https://www.amazon.in/Cruel-Prince-Folk-Air/dp/1471407276/ref=sr_1_1?adgrpid=58943500495&dib=eyJ2IjoiMSJ9.YwGVXslojwF08mZxFMLDLuW50ZmXCjrVbcwQy8OW3JzX1i0fx4JcCGiXBMX5pFGU_Qjf71UlLFG0MajQiPVOHkmvLSaFFNCxbRbeBFT3CwrfZufz3eUtur2w3ckUqzxGSRyuDJMDlO8Pajb3YXHbj8RMN4wVeszLDdOFb4jUrkdSpQLNeyqzgneIlSvGM__3m3Pmu9uafw2Dx-agpeOmCGqkSNYlPLCQpM7bEuco1b4.GinqRk2q62DUUct3zFuSlCIsI-OjtUJbbTPxr-T10f0&dib_tag=se&ext_vrnc=hi&hvadid=763390605296&hvdev=c&hvlocphy=9050497&hvnetw=g&hvqmt=e&hvrand=11785269064169448660&hvtargid=kwd-305003995341&hydadcr=10777_2260963&keywords=the+cruel+prince&mcid=5e4b0c0345d83c2f9a001a0bb5e8d5a6&qid=1766298030&sr=8-1"
               target="_blank" class="book-link">
               <img src="https://m.media-amazon.com/images/I/61mh6nw63+L._SY466_.jpg" class="card-img-top"
@@ -316,7 +343,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card book-card h-100">
+          <div class="card book-card h-100 reveal reveal-left">
             <a href="https://www.amazon.in/FIVE-SURVIVE-Holly-Jackson/dp/0008507236/ref=sr_1_1_sspa?crid=2QNBA6FSEAGG6&dib=eyJ2IjoiMSJ9.uCYcXoLoQl0nxe1qXfrI0DADNgpnm9ulYrMOHgNQk-V_qIV2JyeHpnXdP2jHipxTxxLZfgpTMiFLa2Od0qnVkVMFjIifP6OOk2BeEOC-aUxJXPWIPyZyyXrr5738nVcyDoUWPCH8U7M6-ErrPquRSIyW44fZUxXHTWWfDQb9mgoVWeQbbEIIozorBGffZxt28KkQdGzDw_1dlNYe3JgdpP4b8mpZW_gIobzyacbYMS4.twMSKR_XjxFi2kSY51mhi784V6F0pe4PE5OfXClCu7k&dib_tag=se&keywords=five+survive&qid=1767848002&s=books&sprefix=five%2Cstripbooks%2C472&sr=1-1-spons&aref=BRWnJqvxX5&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
               target="_blank" class="book-link">
               <img src="https://m.media-amazon.com/images/I/81nfHds5U4L._SY342_.jpg" class="card-img-top"
@@ -331,7 +358,7 @@
       </div>
     </div>
   </section>
-  <section id="favorite-authors">
+  <section id="favorite-authors" class="reveal reveal-up">
     <div class="container py-4">
       <h2 class="fw-bold mb-5 text-title">Favourite Authors</h2>
 
@@ -405,7 +432,7 @@
       <h4 class="fw-bold mb-5 text-title">Join Atharv, Arshika's brother as he explores the fantastic world of books!</h4>
       <div class="row g-4 justify-content-center">
         <div class="col-md-4">
-          <div class="card book-card h-100">
+          <div class="card book-card h-100 reveal reveal-left">
             <a href="https://www.amazon.in/SHADOW-BONE-PB-GRISHA-BOOK/dp/1510105247/ref=pd_sbs_d_sccl_1_1/521-8391127-6789834?pd_rd_w=IueQ1&content-id=amzn1.sym.d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_p=d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_r=6413KBXH12H7MXEV9SB5&pd_rd_wg=NiUu7&pd_rd_r=edce2388-c3df-4f82-896e-e8cb0b0c581c&pd_rd_i=1510105247&psc=1"
               target="_blank" class="book-link">
               <img src="https://m.media-amazon.com/images/I/81hnazZqYkL._SY466_.jpg" class="card-img-top"
@@ -418,7 +445,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card book-card h-100">
+          <div class="card book-card h-100 reveal reveal-left">
             <a href="https://www.amazon.in/SIEGE-STORM-PB-GRISHA-Shadow/dp/1510105263/ref=pd_sbs_d_sccl_1_1/521-8391127-6789834?pd_rd_w=jistP&content-id=amzn1.sym.d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_p=d1406b44-aa69-47e4-9270-f613e12d52dc&pf_rd_r=068TE6W4WFFK860E355K&pd_rd_wg=J0Ftc&pd_rd_r=22663276-1f8d-45d9-9150-217695206fff&pd_rd_i=1510105263&psc=1"
               target="_blank" class="book-link">
               <img src="https://m.media-amazon.com/images/I/81iTG5sYcoL._SY466_.jpg" class="card-img-top"
@@ -436,6 +463,26 @@
   </section>
   <script src="js/footer.js"></script>
   <button class="btn btn-danger back-to-top p-2">&uarr;</button>
+  <script>
+    const revealSections = document.querySelectorAll('.reveal');
+
+    if ('IntersectionObserver' in window) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12
+      });
+
+      revealSections.forEach((section) => revealObserver.observe(section));
+    } else {
+      revealSections.forEach((section) => section.classList.add('active'));
+    }
+  </script>
   <script>
     const backToTop = document.querySelector('.back-to-top');
     window.addEventListener('scroll', () => {
