@@ -5,9 +5,11 @@
 All rights reserved.
 
 **1. OWNERSHIP**
+
 The original website source code, original graphics, written content, branding, and other original creative materials in this repository are protected by applicable copyright law, subject to the rights of their respective owners.
 
 **2. RESTRICTIONS**
+
 Unless expressly permitted by applicable law, no person or organization is authorized to reproduce, redistribute, republish, modify, adapt, or create and distribute derivative works from the protected materials in this repository.
 
 Unless expressly permitted by applicable law, no person or organization is authorized to reproduce, redistribute, republish, modify, adapt, or create and distribute derivative works from the protected materials in this repository.
