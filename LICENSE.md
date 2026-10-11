@@ -18,10 +18,10 @@ No licence or permission to reuse protected materials is granted through this re
 
 **4. TRADEMARKS AND IMPERSONATION**
 
-**4. TRADEMARKS AND IMPERSONATION**
 The Arshikaverse name, branding, and associated identifiers may not be used in a manner that falsely suggests affiliation with, endorsement by, or ownership of the official Arshikaverse project.
 
 **5. THIRD-PARTY MATERIALS**
+
 Materials owned by third parties are subject to their respective licences and terms. This notice does not claim ownership of third-party materials or override rights granted by their owners.
 
 **6. PERMISSION POLICY**
