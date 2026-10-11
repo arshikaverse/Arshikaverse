@@ -10,11 +10,11 @@ The original website source code, original graphics, written content, branding, 
 
 2. RESTRICTIONS
 
-Unless expressly authorized in writing by the relevant copyright owner or permitted by applicable law, you may not reproduce, redistribute, republish, or create and distribute derivative works from the protected materials in this repository.
+Unless expressly permitted by applicable law, no person or organization is authorized to reproduce, redistribute, republish, modify, adapt, or create and distribute derivative works from the protected materials in this repository.
 
-3. NO LICENCE GRANTED
+3. NO PERMISSION OR LICENCE GRANTED
 
-Making this repository publicly accessible does not, by itself, grant permission to reuse its protected materials. No licence is granted except where expressly stated in writing by the relevant rights holder.
+No licence or permission to reuse protected materials is granted through this repository. Requests for permission to reuse the protected materials will be declined. Public accessibility of this repository does not grant permission to copy or reuse its protected materials.
 
 4. TRADEMARKS AND IMPERSONATION
 
@@ -24,8 +24,10 @@ The Arshikaverse name, branding, and associated identifiers may not be used in a
 
 Materials owned by third parties are subject to their respective licences and terms. This notice does not claim ownership of third-party materials or override rights granted by their owners.
 
-6. CONTACT AND PERMISSION
+6. PERMISSION POLICY
 
-Requests for permission to use protected materials should be directed to the relevant copyright owner.
+Arshikaverse does not grant individual permissions or exceptions for reuse of its protected materials. All rights remain reserved, subject to applicable law and the rights of respective third-party owners.
 
-This notice does not limit any rights or exceptions provided by applicable law.
+A FRIENDLY WARNING:
+
+If you wanna get cooked (like super cooked) then go ahead and steal this website :)
