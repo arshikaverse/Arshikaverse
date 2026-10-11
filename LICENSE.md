@@ -27,7 +27,3 @@ Materials owned by third parties are subject to their respective licences and te
 6. PERMISSION POLICY
 
 Arshikaverse does not grant individual permissions or exceptions for reuse of its protected materials. All rights remain reserved, subject to applicable law and the rights of respective third-party owners.
-
-A FRIENDLY WARNING:
-
-If you wanna get cooked (like super cooked) then go ahead and steal this website :)
