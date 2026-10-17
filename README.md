@@ -15,7 +15,7 @@ Arshikaverse is a creative platform connected to its official YouTube content.
 
 © 2026 Arshikaverse. All rights reserved.
 
-Unless expressly permitted by the copyright owner or applicable law, no permission is granted by this repository to reproduce, redistribute, or create derivative works from its original website code or creative assets.
+No permission is granted by this repository to reproduce, redistribute, or create derivative works from its original website code or creative assets.
 
 This notice does not claim ownership of third-party materials or override any rights granted by their respective owners.
 
