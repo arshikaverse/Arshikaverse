@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <script async src="https://www.googletagmanager.com/gtm.js?id=G-ZVKFKZXET4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
   </script>
   <!-- /\ Google Tag -->
   <title>Arshikaverse</title>
-  <meta name="description" content="Explore Arshika's videos, travel experiences, book recommendations and more on Arshikaverse.">
+  <meta name="description"
+    content="Explore Arshika's videos, travel experiences, book recommendations and more on Arshikaverse.">
   <!-- Random Stuff to make Arshikaverse viewed on Google -->
-   <link rel="canonical" href="https://arshikaverse.github.io/Arshikaverse/">
-   <meta property="og:title" content="Arshikaverse | Books, Travel & More">
-   <meta property="og:description" content="Explore Arshika's world through books, travel, videos and more.">
-   <meta property="og:url" content="https://arshikaverse.github.io/Arshikaverse/">
-   <meta property="og:type" content="website">
-   <meta property="og:image" content="https://arshikaverse.github.io/Arshikaverse/img/favicon.png">
-   <meta property="og:site_name" content="Arshikaverse">
+  <link rel="canonical" href="https://arshikaverse.pages.dev/">
+  <meta property="og:title" content="Arshikaverse | Books, Travel & More">
+  <meta property="og:description" content="Explore Arshika's world through books, travel, videos and more.">
+  <meta property="og:url" content="https://arshikaverse.pages.dev/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://arshikaverse.pages.dev/img/favicon.png">
+  <meta property="og:site_name" content="Arshikaverse">
   <!-- Meta -->
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Font Awesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!-- Google Fonts -->
-   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap"
-     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;700&display=swap"
+    rel="stylesheet">
   <!-- Favicon -->
-   <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <style>
     ::selection {
       background-color: rgb(255, 0, 51);
@@ -150,6 +152,7 @@
       opacity: 1;
       pointer-events: auto;
     }
+
     .reveal {
       opacity: 0;
       transition: opacity 0.7s ease, transform 0.7s ease;
@@ -181,6 +184,7 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container-fluid px-0 d-none d-lg-block" id="header">
     <div class="row gx-0 align-items-center">
@@ -264,6 +268,58 @@
       </div>
     </div>
   </div>
+  <!-- Website Migration Modal -->
+  <div class="modal fade" id="migrationModal" tabindex="-1" aria-hidden="true" aria-labelledby="migrationTitle">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body py-5">
+          <h2 class="text-center text-title" id="migrationTitle" style="color: rgb(255, 0, 51);">
+            We're Moving! 🚀
+          </h2>
+
+          <h5 class="mt-4">
+            Arshikaverse has a new home!
+          </h5>
+
+          <p class="mt-3">
+            We've moved our website to Cloudflare Pages.
+            Please visit our new official website using the
+            button below.
+          </p>
+
+          <a href="https://arshikaverse.pages.dev/" class="btn btn-danger px-4 mt-2">
+            Visit New Website →
+          </a>
+
+          <h6 class="mt-4 mb-4">
+            This GitHub Pages version will be discontinued
+            soon and will only return temporarily if technical
+            issues occur.
+          </h6>
+
+          <button type="button" class="btn btn-light border px-4" data-bs-dismiss="modal">
+            Continue to old website
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const migrationModalElement =
+      document.getElementById('migrationModal');
+
+    if (!localStorage.getItem('arshikaverse-migration-dismissed')) {
+      const migrationModal =
+        new bootstrap.Modal(migrationModalElement);
+
+      migrationModal.show();
+    }
+
+    migrationModalElement.addEventListener('hidden.bs.modal', () => {
+      localStorage.setItem('arshikaverse-migration-dismissed', 'true');
+    });
+  </script>
   <!-- 
   Coming Soon!
   <section id="vid">
@@ -275,7 +331,8 @@
   <section id="hero">
     <div class="container py-5">
       <h1 class="mt-2 hero-title display-4 brand-font">Welcome to Arshikaverse!</h1>
-      <h4 class="mt-3"><span style="color: white; background-color: rgb(255, 0, 51);">The best place for book reviews, recommendations, music, travel, &amp; more</span></h4>
+      <h4 class="mt-3"><span style="color: white; background-color: rgb(255, 0, 51);">The best place for book reviews,
+          recommendations, music, travel, &amp; more</span></h4>
     </div>
   </section>
   <section id="about-me">
@@ -445,7 +502,8 @@
   <section id="athcurrently-reading">
     <div class="container py-4">
       <h2 class="fw-bold mb-5 text-title">Join in the Atharv Fun!</h2>
-      <h4 class="fw-bold mb-5 text-title">Join Atharv, Arshika's brother as he explores the fantastic world of books!</h4>
+      <h4 class="fw-bold mb-5 text-title">Join Atharv, Arshika's brother as he explores the fantastic world of books!
+      </h4>
       <div class="row g-4 justify-content-center">
         <div class="col-md-4">
           <div class="card book-card h-100 reveal reveal-left">
