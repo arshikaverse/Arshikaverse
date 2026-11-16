@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://arshikaverse.github.io/Arshikaverse/sitemap.xml
+Sitemap: https://arshikaverse.github.io/sitemap.xml
